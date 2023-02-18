@@ -1,0 +1,1462 @@
+using System;
+
+class Program {
+
+  static void Main () {
+
+    
+
+    Console.Write ("Month of: ");
+
+    string month = Console.ReadLine ().ToUpper ();
+
+    
+
+    
+
+    int num = 1;
+
+    
+
+    switch (month) {
+
+      
+
+      case "JANUARY":
+
+      
+
+      Console.WriteLine ("\n       January ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+        
+
+        for (int row2 = 1; row2 <= 7; row2++) {
+
+          Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+          Console.Write (num + " ");
+
+          num++;
+
+          
+
+          if (num == 32) {
+
+            break;
+
+          }
+
+        }
+
+        Console.WriteLine ();
+
+        
+
+      } 
+
+      
+
+      Console.ResetColor ();
+
+      
+
+        int  extend = 9;
+
+        
+
+        
+
+        // 1st line extend
+
+        for (int i = 1; i <= 8; i++) {
+
+      
+
+          Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.SetCursorPosition (extend+4,3);
+
+          Console.Write (" ");
+
+          extend++;
+
+        }
+
+        
+
+         
+
+         // 2nd line extend 
+
+        for (int i = 1; i <= 3; i++) {
+
+            
+
+          Console.SetCursorPosition (extend+1,4);
+
+          Console.Write (" ");
+
+            extend++;
+
+        } 
+
+        
+
+      
+
+        // 3rd line extend 
+
+        for (int i = 1; i <= 11; i++) {
+
+         
+
+               Console.SetCursorPosition (extend-11,7);
+
+               Console.Write ("  ");
+
+                extend++; 
+
+             } 
+
+             
+
+      /* Holidays
+
+       New Year's Day */
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.SetCursorPosition (0,3);
+
+      Console.Write ("1");
+
+      
+
+      // Special non-working day after New Year
+
+      Console.SetCursorPosition (2,3);
+
+      Console.Write ("2"); 
+
+      
+
+      //Lunar New Year's Day
+
+      Console.SetCursorPosition (0,6);
+
+      Console.Write ("22");
+
+      
+
+      Console.ResetColor();
+
+      Console.SetCursorPosition (0,8);
+
+                                             //1st                2nd                                      3rd      
+
+      Console.WriteLine ("\nHolidays: \n1. New Year's Day\n2. Special non-working day after New Year\n22. Lunar New Year's Day");
+
+      break;
+
+      
+
+      
+
+      case "FEBRUARY":
+
+      
+
+      Console.WriteLine ("\n       February ");
+
+      for (int row1 = 1; row1 <= 4; row1++) {
+
+        
+
+        for (int row2 = 1; row2 <= 7; row2++) {
+
+          Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+          Console.Write (num + " ");
+
+          num++;
+
+          
+
+          if (num == 29) {
+
+            break;
+
+          }
+
+        }
+
+        Console.WriteLine ();
+
+        
+
+      } 
+
+      int fill_color = 14;
+
+      // 1st line
+
+      for (int  i = 1; i <= 7; i++) {
+
+          Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+          Console.SetCursorPosition (fill_color,3);
+
+          Console.Write (" ");
+
+          fill_color++;
+
+        }
+
+      // 2nd line
+
+      for (int i = 1; i <= 2; i++) {
+
+          Console.SetCursorPosition (fill_color- 3 ,4);
+
+          Console.Write ("  ");
+
+          fill_color++;
+
+        }
+
+      
+
+      /*Holiday 
+
+      People Power Anniversary*/
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.SetCursorPosition (9,6);
+
+      Console.Write ("25");
+
+      
+
+      
+
+      
+
+      Console.ResetColor ();
+
+      
+
+      Console.SetCursorPosition (0,8);
+
+      Console.WriteLine ("Holiday:\n25. People Power Anniversary");
+
+      break;
+
+      
+
+      case "MARCH":
+
+      
+
+      Console.WriteLine ("\n       March ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 32) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+        int  fill_color2 = 14;
+
+        // 1st line 
+
+       for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color2,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color2++;
+
+        }
+
+        
+
+        // 2nd line 
+
+        for (int i = 1; i <= 2; i++) {
+
+           Console.SetCursorPosition (fill_color2-2,4);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color2++;
+
+        } 
+
+        
+
+        // 5th line 
+
+        for (int i = 1; i <= 12; i++) {
+
+           Console.SetCursorPosition (fill_color2-14,7);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color2++;
+
+        }
+
+        
+
+        Console.ResetColor ();
+
+        
+
+        // Birthday ko yan HAHAHA
+
+        Console.BackgroundColor = ConsoleColor.Red;
+
+        Console.SetCursorPosition (3,7);
+
+        Console.Write ("30");
+
+        
+
+        Console.ResetColor ();
+
+        
+
+        Console.SetCursorPosition (0,9);
+
+        Console.WriteLine ("March 30 is my BIRTHDAY!");
+
+      break;
+
+      
+
+      case "APRIL":
+
+      
+
+      Console.WriteLine ("\n       April ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 31) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+        int fill_color3 = 14;
+
+        
+
+        // first line 
+
+        for (int i = 1; i <= 7; i++) {
+
+            
+
+            Console.SetCursorPosition (fill_color3,3);
+
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+            Console.Write (" ");
+
+            fill_color3++;
+
+        }
+
+        
+
+        // 2nd line 
+
+        for (int i = 1; i <= 2; i++) {
+
+            
+
+            Console.SetCursorPosition (fill_color3-2,4);
+
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+            Console.Write (" ");
+
+            fill_color3++;
+
+        }
+
+        
+
+        // 5th line 
+
+        for (int i = 1; i <= 15; i++) {
+
+            
+
+            Console.SetCursorPosition (fill_color3-17,7);
+
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+            Console.Write (" ");
+
+            fill_color3++;
+
+        }
+
+        
+
+        Console.ResetColor ();
+
+        
+
+        /*Holidays
+
+        Maundy Thursday & Good Friday  */
+
+        int holiday = 10, day = 6; 
+
+        for (int i = 1; i <= 2; i++){
+
+            Console.SetCursorPosition (holiday,3);
+
+            Console.BackgroundColor = ConsoleColor.Red;
+
+            Console.Write ($"{day}");
+
+            holiday+=2;
+
+            day++;
+
+        }
+
+        
+
+        // Black Saturday, Easter Sunday & The Day of Valor  
+
+        for (int i = 1; i <= 3; i++){
+
+            Console.SetCursorPosition (holiday-14,4);
+
+            Console.BackgroundColor = ConsoleColor.Red;
+
+            Console.Write ($"{day}");
+
+            holiday+=2;
+
+            day++;
+
+        }
+
+        
+
+        // Eidul-Fitar
+
+        Console.SetCursorPosition (holiday-20,6);
+
+            Console.BackgroundColor = ConsoleColor.Red;
+
+            Console.Write ($"{day+11}");
+
+            
+
+        
+
+        Console.ResetColor ();
+
+        
+
+        Console.SetCursorPosition (holiday-23,9);
+
+          //                             6th                 7th            8th                  9th            10th                       22th    
+
+        Console.Write ("Holidays:\n6. Maundy Thursday\n7. Good Friday\n8. Black Saturday\n9. Easter Sunday\n10. The Day of Valor\n22. Eidul-Fitar");
+
+      
+
+      break;
+
+      
+
+      case "MAY":
+
+      
+
+      Console.WriteLine ("\n       May ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 32) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+      
+
+      //1st line 
+
+     int fill_color4 = 14;
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color4,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color4++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color4-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color4++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 13; i++) {
+
+          Console.SetCursorPosition (fill_color4-16,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color4++;
+
+      }
+
+     Console.ResetColor ();
+
+     
+
+     /* Holiday
+
+       Labor Day */
+
+     Console.SetCursorPosition (0,3);
+
+     Console.BackgroundColor = ConsoleColor.Red;
+
+     Console.Write ("1");
+
+     
+
+     Console.ResetColor ();
+
+     
+
+     Console.SetCursorPosition (0,9);
+
+     Console.Write ("Holiday:\n1. Labor Day ");
+
+      break;
+
+      
+
+     case "JUNE":
+
+     
+
+     Console.WriteLine ("\n       June ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 31) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+         //1st line 
+
+     int fill_color5 = 14;
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color5,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color5++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color5-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color5++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 15; i++) {
+
+          Console.SetCursorPosition (fill_color5-18,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color5++;
+
+      }
+
+      
+
+      /* holiday 
+
+      Independence Day*/
+
+      Console.SetCursorPosition (10, 4);
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.Write ("12");
+
+      
+
+      //  Jasmen's Birthday
+
+      Console.SetCursorPosition (6, 6);
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.Write ("24");
+
+      
+
+      // Eid al-Adha (Feast of the Sacrifice)
+
+      Console.SetCursorPosition (0, 7);
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.Write ("29");
+
+      
+
+      Console.ResetColor ();
+
+      
+
+      Console.SetCursorPosition (0, 9);
+
+      Console.Write ("Holidays:\n12. Independence Day\n29. Eid al-Adha (Feast of the Sacrifice)\n\nBirthday:\n24. Jasmen Ruiz");
+
+     break;
+
+     
+
+     case "JULY":
+
+     Console.WriteLine ("\n       July ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 32) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+      int fill_color6 = 14;
+
+      
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color6,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color6++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color6-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color6++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 13; i++) {
+
+          Console.SetCursorPosition (fill_color6-16,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color6++;
+
+     }
+
+     
+
+     Console.ResetColor ();
+
+     
+
+     Console.SetCursorPosition (0,8);
+
+     Console.Write ("\nNo Holidays.");
+
+      break;
+
+      
+
+      case "AUGUST":
+
+      
+
+      Console.WriteLine ("\n       August ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 32) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+      int fill_color7 = 14;
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color7,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color7++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color7-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color7++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 13; i++) {
+
+          Console.SetCursorPosition (fill_color7-16,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color7++;
+
+      }
+
+      
+
+      /* Holiday
+
+       Ninoy Aquino Day */
+
+      Console.SetCursorPosition (18,5);
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.Write ("21");
+
+      
+
+      //National Heroes Day 
+
+      Console.SetCursorPosition (18,6);
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.Write ("28");
+
+      
+
+      Console.ResetColor ();
+
+     
+
+      Console.SetCursorPosition (0,9);
+
+      //                                   1st                2nd 
+
+      Console.Write ("Holiday:\n21. Ninoy Aquino Day \n28. National Heroes Day");
+
+      break;
+
+     
+
+     case "SEPTEMBER":
+
+     
+
+     Console.WriteLine ("\n       September ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 31) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        }
+
+        
+
+       
+
+      int fill_color8 = 14;
+
+      
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color8,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color8++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color8-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color8++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 15; i++) {
+
+          Console.SetCursorPosition (fill_color8-18,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color8++;
+
+      }
+
+      
+
+     Console.ResetColor ();
+
+     
+
+     Console.SetCursorPosition (0,8);
+
+     Console.Write ("\nNo Holidays.");
+
+     break;
+
+     
+
+     case "OCTOBER":
+
+     
+
+     Console.WriteLine ("\n       October ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 32) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        } 
+
+        
+
+      int fill_color9 = 14;
+
+      
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color9,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color9++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color9-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color9++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 13; i++) {
+
+          Console.SetCursorPosition (fill_color9-16,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color9++;
+
+     }
+
+     
+
+     Console.ResetColor ();
+
+     
+
+     Console.SetCursorPosition (0,8);
+
+     Console.Write ("\nNo Holidays.");
+
+      
+
+     break;
+
+     
+
+     case "NOVEMBER":
+
+     
+
+     Console.WriteLine ("\n       November ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 31) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        } 
+
+        
+
+      int fill_color10 = 14;
+
+      
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color10,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color10++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color10-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color10++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 15; i++) {
+
+          Console.SetCursorPosition (fill_color10-18,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color10++;
+
+     }
+
+     
+
+     Console.ResetColor ();
+
+     
+
+     int holiday2 = 0, day2 = 1;
+
+     
+
+     /* Holiday 
+
+     All Saints' Day & All Souls' Day */
+
+     for (int i = 1; i <= 2; i++) {
+
+           Console.SetCursorPosition (holiday2,3);
+
+           Console.BackgroundColor = ConsoleColor.Red;
+
+           Console.Write ($"{day2}");
+
+           
+
+           day2++;
+
+           holiday2+= 2;
+
+        }
+
+        
+
+      // Bonifacio Day
+
+      Console.SetCursorPosition (holiday2-1,7);
+
+      Console.BackgroundColor = ConsoleColor.Red;
+
+      Console.Write ($"{day2+27}");
+
+      
+
+      Console.ResetColor ();
+
+      
+
+      Console.SetCursorPosition (holiday2-14,9);
+
+      Console.Write ("Holiday:\n1. All Saints' Day\n2. All Souls' Day\n30. Bonifacio Day");
+
+      break;
+
+      
+
+      case "DECEMBER":
+
+      
+
+      Console.WriteLine ("\n       December ");
+
+      for (int row1 = 1; row1 <= 5; row1++) {
+
+              
+
+           for (int row2 = 1; row2 <= 7; row2++) {
+
+              Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+              Console.Write (num + " ");
+
+              num++;
+
+              
+
+               if (num == 32) {
+
+                  break;
+
+                }
+
+            }
+
+            Console.WriteLine ();
+
+        } 
+
+        
+
+      int fill_color11 = 14;
+
+      
+
+      for (int i = 1; i <= 7; i++) {
+
+           Console.SetCursorPosition (fill_color11,3);
+
+           Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+           Console.Write (" ");
+
+           fill_color11++;
+
+      }
+
+      
+
+      // 2nd Line 
+
+      for (int i = 1; i <= 3; i++) {
+
+          Console.SetCursorPosition (fill_color11-3,4);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color11++;
+
+      }
+
+     
+
+     // 5th Line 
+
+     for (int i = 1; i <= 13; i++) {
+
+          Console.SetCursorPosition (fill_color11-16,7);
+
+        Console.BackgroundColor = ConsoleColor.DarkGreen;
+
+        Console.Write (" ");
+
+        fill_color11++;
+
+     }
+
+     
+
+     int holiday3 = 6, days = 24;
+
+     
+
+     /* Holidays
+
+     Feast of the Immaculate Conception */
+
+     Console.SetCursorPosition (0,4);
+
+     Console.BackgroundColor = ConsoleColor.Red;
+
+     Console.Write ("8");
+
+     
+
+     // Christmas Eve, Christmas Day & Special Day after Christmas
+
+     for (int i = 1; i <= 3; i++) {
+
+         Console.SetCursorPosition (holiday3,6);
+
+         Console.Write (days);
+
+         holiday3+=3;
+
+         days++;
+
+     }
+
+     
+
+     // Rizal Day & New year's Eve
+
+     for (int i = 1; i <= 2; i++) {
+
+         Console.SetCursorPosition (holiday3-12,7);
+
+         Console.Write (days+3);
+
+         holiday3+=3;
+
+        days++;
+
+     }
+
+     Console.ResetColor ();  
+
+     
+
+     Console.SetCursorPosition (0,9);
+
+     Console.Write ("Holidays:\n8. Feast of the Immaculate Conception\n24. Christmas Eve\n25. Christmas Day\n26. Special Day afteholiday3-12\n30. Rizal Day\n31. New year's Eve");
+
+      break;
+
+    }
+
+  }
+
+}
+
